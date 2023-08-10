@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: aliceblue;
+    margin-top: 20px;
+  }
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    color: #fc7614;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+    padding: 25px;
+    border-radius: 15px;
+    background-color: #1C2228;
+}
+
+.rating img{
+    padding: 10px;
+    background-color: #282f36;
+    border-radius: 50%;
+    width: 15px;
+}
+
+.info h3{
+    color: aliceblue;
+    margin-top: 30px;
+    margin-bottom: 13px;
+}
+
+.info p{
+    width: 320px;
+    color: #959EAC;
+    font-size: 14px;
+}
+
+.btn-group{
+    margin-top: 30px;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-group button{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: #282f36;
+    color: aliceblue;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-group button:hover{
+    background-color: #fc7614;
+}
+
+.btn-group button:focus{
+    background-color: #959EAC;
+}
+
+.submit{
+    margin-top: 30px;
+}
+
+.sub{
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #f38231;
+    letter-spacing: 3px;
+    font-weight: 600;
+    transition: .3s;
+    cursor: pointer;
+}
+
+/* Thank you start */
+.container2{
+    padding: 25px;
+    border-radius: 15px;
+    background-color: #1C2228;
+    position: relative;
+    display: none;
+}
+
+.container2 > .img{
+    margin: 20px auto;
+    text-align: center;
+}
+
+.star-info{
+    color: #f38231;
+    padding: 5px;
+    width: 60%;
+    background-color: #282f36;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px auto 20px auto;
+    text-align: center;
+}
+
+.container2 > h3{
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.container2 > p{
+    width: 360px;
+    text-align: center;
+    color: #959EAC;
+    margin-bottom: 20px;
+}
+
+.hide{
+    display: none;
+}
+
+.sub-disabled{
+    cursor: not-allowed;
+    background-color: #282f36;
+    color: #f38231;
+}
+
+@media screen and (max-width: 420px) {
+    .container{
+        padding: 15px;
+    }
+
+    .rating img{
+        padding: 8px;
+    }
+
+    .info p{
+        width: 300px;
+    }
+
+    .container2{
+        padding: 15px;
+    }
+
+    .container2 > p{
+        width: 300px;
+    }
+}
